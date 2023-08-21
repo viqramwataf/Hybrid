@@ -1,0 +1,10 @@
+<ion-card *ngFor="let rc of readComics;" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+width: 70%;
+margin-left: 225px;">
+  <ion-card-content style="text-align:center;">  
+    <img class="url_poster" src="{{ rc.url_poster }}" /> <br>
+    <ion-label>Page {{ rc.page }}</ion-label>
+  </ion-card-content>
+</ion-card><br>
+<ion-button color="primary" style="margin-left: 685px;" (click)="addFav()">Add Favorite</ion-button><br>
+<ion-button fill="clear"></ion-button>

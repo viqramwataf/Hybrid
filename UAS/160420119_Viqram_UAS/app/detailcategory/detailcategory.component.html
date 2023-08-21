@@ -1,0 +1,16 @@
+<ion-card *ngFor="let dc of detailComics;" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+transition: 0.3s;
+width: 15%;
+float: left;
+margin-left: 200px;
+align-self: center;">
+  <ion-card-content *ngFor="let dr of showRates;" style="text-align: center;">
+    <ion-label>{{ dc.title }}</ion-label>
+    <br>
+    <img class="url_poster" src="{{ dc.url_poster }}" />
+    <ion-label>Rating : {{ dr.rating }}</ion-label>
+    <ion-input type="number" placeholder='Input Rating' [(ngModel)]="rating" min='1' max='10'></ion-input>
+    <ion-button (click)="addRate()">Submit Rating</ion-button><br>
+    <ion-label color="primary" routerLink="/readcomic/{{ dc.idcomic }}">Read More ..</ion-label>
+  </ion-card-content>
+</ion-card>

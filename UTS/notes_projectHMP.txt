@@ -1,0 +1,8 @@
+Tabel" untuk komiku
+- master_user
+- kategori (opsional) (url-kategori)
+- komik (id_komik, judul, kategori/kategori_id(kalau pake tabel kategori), url_poster)
+- komik_halaman (id_komik, hal, url_halaman)
+- komentar(id serial, user_id, komik_id, komentarnya)
+- rating (user_id, komik_id, rating)
+- myfavorite (user_id, komik_id)

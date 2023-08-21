@@ -1,0 +1,11 @@
+<ion-card *ngFor="let c of categorys;" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+transition: 0.3s;
+width: 15%;
+float: left;
+margin-left: 110px;
+align-self: center;">
+  <ion-card-content style="text-align:center;">
+    <ion-label color="primary">{{ c.idcategory }}.  </ion-label>    
+    <ion-label color='primary' routerLink='/detailcategory/{{ c.idcategory }}'><ion-button> {{ c.name }} </ion-button></ion-label>
+  </ion-card-content>
+</ion-card>
